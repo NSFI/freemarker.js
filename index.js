@@ -68,6 +68,10 @@ function generateConfiguration(data, done) {
       result.push(x);
     }
   });
+  if ( data.sourceEncoding ) {// 解决mock中文数据乱码的问题，见https://github.com/ijse/freemarker.js/issues/27
+
+    return `# encoding: ${data.sourceEncoding.toUpperCase()}\n${result.join('\n')}`;
+  }
 
   return result.join('\n');
 }
