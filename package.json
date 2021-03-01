@@ -1,5 +1,5 @@
 {
-  "name": "freemarker.js",
+  "name": "@ysf/freemarker.js",
   "version": "1.4.0",
   "description": "Make freemarker available for node.js with FMPP.",
   "main": "index.js",
