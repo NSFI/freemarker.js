@@ -1,6 +1,6 @@
 {
   "name": "@ysf/freemarkerjs",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Make freemarker available for node.js with FMPP.",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,10 @@
   ],
   "bin": {
     "fmpp": "./fmpp/fmpp"
+  },
+  "browser":{
+    "child_process": false,
+    "fs": false
   },
   "author": "ijse",
   "license": "MIT",
